@@ -1,9 +1,0 @@
-<h3>date</h3>
-<%= @record.start_time.strftime("%Y/%m/%d") %>
-
-<h3>content</h3>
-<%= @record.content %>
-<br><br>
-<%= link_to 'Edit', edit_record_path(@record) %> 
-<%= link_to 'Back', records_path %>
-<%= link_to 'Destroy', record_path(@record), method: :delete, data: { confirm: '本当に削除しますか?' } %>
